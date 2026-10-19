@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#080811] text-white">
       {/* Navbar */}
-     <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#080811]/90 px-6 py-5 backdrop-blur-xl md:px-16">
+     <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#080811]/90 px-6 py-4 shadow-lg shadow-purple-950/20 backdrop-blur-2xl md:px-16">
     <div className="mx-auto flex max-w-7xl items-center justify-between">
     <a href="#home" className="text-2xl font-bold tracking-wide">
       Welcome To My Journey💖<span className="text-purple-500">.</span>
@@ -78,7 +78,7 @@ function App() {
 
         {/* Right: Profile Photo */}
         <section className="flex justify-center">
-          <div className="relative flex h-64 w-64 items-center justify-center rounded-full bg-gradient-to-red from-purple-600 via-blue-600 to-purple-400 p-1 shadow-2xl shadow-purple-500/30 sm:h-80 sm:w-80">
+         <div className="relative h-64 w-64 rounded-full bg-gradient-to-br from-purple-500 via-blue-500 to-purple-400 p-1 shadow-2xl shadow-purple-500/40 transition duration-500 hover:scale-105 hover:shadow-blue-500/40 sm:h-80 sm:w-80">
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-[#11111f]">
               <img
                 src="my_image.png"
@@ -146,8 +146,7 @@ function App() {
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         {/* Notes App */}
-        <div className="rounded-xl border border-white/10 bg-white/10 p-5 transition hover:translate-y-1
-         hover:border-purple-500/50">
+        <div className="group rounded-xl border border-white/10 bg-linear-to-br from-white/10 to-purple-500/10 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-500/10">
           <h3 className="mt-4 text-lg font-semibold">Notes App</h3>
           <p className="mt-2 text-sm leading-6 text-gray-400">A React notes application with 
           add, edit, delete, pin 
@@ -164,8 +163,7 @@ function App() {
         </div>
 
         {/* expence tracker */}
-        <div className="rounded-xl border border-white/10 bg-white/10 p-5 transition hover:translate-y-1
-         hover:border-blue-500/50">
+        <div className="group rounded-xl border border-white/10 bg-linear-to-br from-white/10 to-blue-500/10 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-blue-400/50 hover:shadow-xl hover:shadow-blue -500/10">
           <h3 className="mt-4 text-lg font-semibold">Expense Tracker</h3>
 
           <p className="mt-2 text-sm leading-6 text-gray-400">A simple expense management app to add, delete, search and track expenses.</p>
